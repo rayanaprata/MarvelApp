@@ -128,7 +128,7 @@ class HomeViewController: UIViewController {
                               method: .GET) { charactersList in
             self.characters = charactersList
             DispatchQueue.main.async {
-                print("\(String(describing: self.characters))")
+
             }
         } failure: { error in
             print(error)
