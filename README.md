@@ -7,6 +7,8 @@ O objetivo deste projeto é reforçar os conhecimentos e conceitos de Swift para
 
 ## 📌 Requisitos do Projeto
 
+Fase 1
+
 ### Tela Inicial: HomeViewController
 
 - [x] Carrossel superior com 5 personagens
