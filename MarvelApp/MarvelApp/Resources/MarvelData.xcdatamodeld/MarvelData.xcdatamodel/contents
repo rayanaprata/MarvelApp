@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G224" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EntityOffset" representedClassName="EntityOffset" syncable="YES" codeGenerationType="class">
+        <attribute name="offset" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <userInfo>
+            <entry key="key" value="value"/>
+        </userInfo>
+    </entity>
+    <entity name="Hero" representedClassName="Hero" syncable="YES" codeGenerationType="class">
+        <attribute name="comics" optional="YES" attributeType="String"/>
+        <attribute name="events" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="resultDescription" optional="YES" attributeType="String"/>
+        <attribute name="series" optional="YES" attributeType="String"/>
+        <userInfo>
+            <entry key="key" value="value"/>
+        </userInfo>
+    </entity>
+    <elements>
+        <element name="EntityOffset" positionX="0" positionY="81" width="128" height="44"/>
+        <element name="Hero" positionX="0" positionY="63" width="128" height="134"/>
+    </elements>
+</model>
