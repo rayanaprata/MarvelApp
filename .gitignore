@@ -1,31 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@leocoout 
-leocoout
-/
-Clean-Architecture
-Private
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-Settings
-Clean-Architecture/.gitignore
-@leocoout
-leocoout Add xcodeproj to git ignore
-Latest commit 6322903 28 days ago
- History
- 1 contributor
-94 lines (77 sloc)  2.16 KB
-   
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -68,7 +40,7 @@ playground.xcworkspace
 # Packages/
 # Package.pins
 # Package.resolved
-#*.xcodeproj
+# *.xcodeproj
 #
 # Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
 # hence it is not needed unless you have added a package configuration file to your project
@@ -120,16 +92,3 @@ iOSInjectionProject/
 # OS generated files
 .DS_Store
 .DS_Store?
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
