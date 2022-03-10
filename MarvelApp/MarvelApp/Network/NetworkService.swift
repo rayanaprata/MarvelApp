@@ -6,13 +6,18 @@
 //
 
 import Foundation
-import var CommonCrypto.CC_MD5_DIGEST_LENGTH
-import func CommonCrypto.CC_MD5
-import typealias CommonCrypto.CC_LONG
 
 class NetworkService: NetworkServiceProtocol {
     
     let baseURL = "http://gateway.marvel.com"
+    
+    // MARK: - Private Properties
+    
+    private let crypto: MarvelCryptoProtocol
+    
+    init(crypto: MarvelCryptoProtocol) {
+        self.crypto = crypto
+    }
     
     func authentication(_ path: String) -> Auth {
         return Auth(path: path,
@@ -25,21 +30,21 @@ class NetworkService: NetworkServiceProtocol {
     func setNewCharacters(_ offset: Int) -> String {
         let auth = authentication("v1/public/characters")
         let content = String(auth.ts) + auth.privateKey + auth.publicKey
-        let hash = MD5(string: content)
+        let hash = crypto.MD5(string: content)
         return baseURL + "/" + auth.path + "?" + "offset=\(offset)" + "&ts=\(auth.ts)" + "&apikey=\(auth.publicKey)" + "&hash=\(hash)"
     }
     
     func searchCharacter(_ nameStartsWith: String) -> String {
         let auth = authentication("v1/public/characters")
         let content = String(auth.ts) + auth.privateKey + auth.publicKey
-        let hash = MD5(string: content)
+        let hash = crypto.MD5(string: content)
         return baseURL + "/" + auth.path + "?" + "nameStartsWith=\(nameStartsWith)" + "&ts=\(auth.ts)" + "&apikey=\(auth.publicKey)" + "&hash=\(hash)"
     }
     
     func setCarouselCharacter(_ serieId: Int) -> String {
         let auth = authentication("v1/public/characters")
         let content = String(auth.ts) + auth.privateKey + auth.publicKey
-        let hash = MD5(string: content)
+        let hash = crypto.MD5(string: content)
         return baseURL + "/" + auth.path + "?" + "series=\(serieId)" + "&ts=\(auth.ts)" + "&apikey=\(auth.publicKey)" + "&hash=\(hash)"
     }
     
@@ -73,23 +78,5 @@ class NetworkService: NetworkServiceProtocol {
             }
         })
         task.resume()
-    }
-    
-    func MD5(string: String) -> String {
-        let length = Int(CC_MD5_DIGEST_LENGTH)
-        let messageData = string.data(using:.utf8)!
-        var digestData = Data(count: length)
-        
-        _ = digestData.withUnsafeMutableBytes { digestBytes -> UInt8 in
-            messageData.withUnsafeBytes { messageBytes -> UInt8 in
-                if let messageBytesBaseAddress = messageBytes.baseAddress, let digestBytesBlindMemory = digestBytes.bindMemory(to: UInt8.self).baseAddress {
-                    let messageLength = CC_LONG(messageData.count)
-                    CC_MD5(messageBytesBaseAddress, messageLength, digestBytesBlindMemory)
-                }
-                return 0
-            }
-        }
-        return digestData.map { String(format: "%02hhx", $0) }.joined()
-    }
-    
+    }    
 }

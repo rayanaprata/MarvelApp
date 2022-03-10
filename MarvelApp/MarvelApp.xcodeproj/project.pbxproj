@@ -79,6 +79,7 @@
 		FD207BBC27DAB61600A75EA2 /* ImageWithBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BB627DAB61600A75EA2 /* ImageWithBlur.swift */; };
 		FD207BBD27DAB61600A75EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BB727DAB61600A75EA2 /* AppDelegate.swift */; };
 		FD207BBE27DAB61600A75EA2 /* TaggingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BB827DAB61600A75EA2 /* TaggingProtocol.swift */; };
+		FD207BC127DAC46E00A75EA2 /* MarvelCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BC027DAC46E00A75EA2 /* MarvelCrypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		FD207BB627DAB61600A75EA2 /* ImageWithBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageWithBlur.swift; sourceTree = "<group>"; };
 		FD207BB727DAB61600A75EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD207BB827DAB61600A75EA2 /* TaggingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggingProtocol.swift; sourceTree = "<group>"; };
+		FD207BC027DAC46E00A75EA2 /* MarvelCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCrypto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		523765B627469DA200E8BC78 /* MarvelApp */ = {
 			isa = PBXGroup;
 			children = (
+				FD207BBF27DAC44900A75EA2 /* Crypto */,
 				FD207BB227DAB61600A75EA2 /* Utils */,
 				FD207BA527DAB60F00A75EA2 /* Network */,
 				FD207B8E27DAB60800A75EA2 /* Data */,
@@ -406,6 +409,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		FD207BBF27DAC44900A75EA2 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				FD207BC027DAC46E00A75EA2 /* MarvelCrypto.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -557,6 +568,7 @@
 				FD207BBC27DAB61600A75EA2 /* ImageWithBlur.swift in Sources */,
 				FD207BA327DAB60800A75EA2 /* Comics.swift in Sources */,
 				527AF10D27907016007247E0 /* DetailsViewModel.swift in Sources */,
+				FD207BC127DAC46E00A75EA2 /* MarvelCrypto.swift in Sources */,
 				522D9E322791B76E00FB6B47 /* HomeViewModelDelegate.swift in Sources */,
 				52E2A2522746BF2100A3AD3E /* DetailsViewController.swift in Sources */,
 				FD207BB027DAB60F00A75EA2 /* HTTPMethod.swift in Sources */,

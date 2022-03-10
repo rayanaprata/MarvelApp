@@ -11,5 +11,4 @@ protocol NetworkServiceProtocol {
     func searchCharacter(_ nameStartsWith: String) -> String
     func setCarouselCharacter(_ serieId: Int) -> String
     func getListCharacters(urlString: String, method: HTTPMethod, success: @escaping (Character) -> Void, failure: @escaping (NetworkServiceError) -> Void)
-    func MD5(string: String) -> String
 }
