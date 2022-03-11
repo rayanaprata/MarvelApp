@@ -5,9 +5,9 @@
 	<key>FirebaseAutomaticScreenReportingEnabled</key>
 	<false/>
 	<key>privateKey</key>
-	<string>0</string>
+	<string>e30eb4fd2bcade522ae467b91f20d9d8602d47ce </string>
 	<key>publicKey</key>
-	<string>0</string>
+	<string>f5f3a3f471bb6ad75818d41835590f36</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
