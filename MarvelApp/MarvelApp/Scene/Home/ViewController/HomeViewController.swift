@@ -14,9 +14,13 @@ class HomeViewController: UIViewController {
     
     // MARK: Properties
     let tag: TaggingProtocol
-    var viewModel = HomeViewModel(networkService: NetworkService(),
-                                  coreDataManager: CoreDataManager(),
-                                  parseManager: ParseManager())
+    private let marvelCrypto = MarvelCrypto()
+    
+    lazy var viewModel = HomeViewModel(
+        networkService: NetworkService(crypto: marvelCrypto),
+        coreDataManager: CoreDataManager(),
+        parseManager: ParseManager()
+    )
     
     lazy var emptyStateMessage: UILabel = {
         let messageLabel = UILabel()

@@ -79,6 +79,9 @@
 		FD207BBC27DAB61600A75EA2 /* ImageWithBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BB627DAB61600A75EA2 /* ImageWithBlur.swift */; };
 		FD207BBD27DAB61600A75EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BB727DAB61600A75EA2 /* AppDelegate.swift */; };
 		FD207BBE27DAB61600A75EA2 /* TaggingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BB827DAB61600A75EA2 /* TaggingProtocol.swift */; };
+		FD207BC127DAC46E00A75EA2 /* MarvelCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BC027DAC46E00A75EA2 /* MarvelCrypto.swift */; };
+		FD207BC527DAC78F00A75EA2 /* MarvelCryptoSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BC427DAC78F00A75EA2 /* MarvelCryptoSpy.swift */; };
+		FD207BC727DAC7B600A75EA2 /* MarvelCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BC627DAC7B600A75EA2 /* MarvelCryptoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +140,9 @@
 		FD207BB627DAB61600A75EA2 /* ImageWithBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageWithBlur.swift; sourceTree = "<group>"; };
 		FD207BB727DAB61600A75EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD207BB827DAB61600A75EA2 /* TaggingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggingProtocol.swift; sourceTree = "<group>"; };
+		FD207BC027DAC46E00A75EA2 /* MarvelCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCrypto.swift; sourceTree = "<group>"; };
+		FD207BC427DAC78F00A75EA2 /* MarvelCryptoSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCryptoSpy.swift; sourceTree = "<group>"; };
+		FD207BC627DAC7B600A75EA2 /* MarvelCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCryptoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +214,7 @@
 		523765B627469DA200E8BC78 /* MarvelApp */ = {
 			isa = PBXGroup;
 			children = (
+				FD207BBF27DAC44900A75EA2 /* Crypto */,
 				FD207BB227DAB61600A75EA2 /* Utils */,
 				FD207BA527DAB60F00A75EA2 /* Network */,
 				FD207B8E27DAB60800A75EA2 /* Data */,
@@ -330,6 +337,7 @@
 		52B21E682798AFBE00F328AE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				FD207BC227DAC75C00A75EA2 /* Crypto */,
 				52F41E16275AC25D0074B233 /* HomeViewControllerTests.swift */,
 				526D76F927959C12004184D4 /* HomeViewModelTestes.swift */,
 			);
@@ -404,6 +412,31 @@
 				FD207BB827DAB61600A75EA2 /* TaggingProtocol.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FD207BBF27DAC44900A75EA2 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				FD207BC027DAC46E00A75EA2 /* MarvelCrypto.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		FD207BC227DAC75C00A75EA2 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				FD207BC627DAC7B600A75EA2 /* MarvelCryptoTests.swift */,
+				FD207BC327DAC77B00A75EA2 /* Doubles */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		FD207BC327DAC77B00A75EA2 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				FD207BC427DAC78F00A75EA2 /* MarvelCryptoSpy.swift */,
+			);
+			path = Doubles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,6 +590,7 @@
 				FD207BBC27DAB61600A75EA2 /* ImageWithBlur.swift in Sources */,
 				FD207BA327DAB60800A75EA2 /* Comics.swift in Sources */,
 				527AF10D27907016007247E0 /* DetailsViewModel.swift in Sources */,
+				FD207BC127DAC46E00A75EA2 /* MarvelCrypto.swift in Sources */,
 				522D9E322791B76E00FB6B47 /* HomeViewModelDelegate.swift in Sources */,
 				52E2A2522746BF2100A3AD3E /* DetailsViewController.swift in Sources */,
 				FD207BB027DAB60F00A75EA2 /* HTTPMethod.swift in Sources */,
@@ -588,6 +622,8 @@
 			files = (
 				52EBEB59279612B90005637D /* CoreDataMock.swift in Sources */,
 				526D76FA27959C12004184D4 /* HomeViewModelTestes.swift in Sources */,
+				FD207BC527DAC78F00A75EA2 /* MarvelCryptoSpy.swift in Sources */,
+				FD207BC727DAC7B600A75EA2 /* MarvelCryptoTests.swift in Sources */,
 				52B21E642798AC8300F328AE /* HomeViewControllerSpy.swift in Sources */,
 				52F41E17275AC25D0074B233 /* HomeViewControllerTests.swift in Sources */,
 				52FFA4392756C049006A3F39 /* NetworkServiceSpy.swift in Sources */,
