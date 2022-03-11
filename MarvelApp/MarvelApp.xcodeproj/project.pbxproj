@@ -80,6 +80,8 @@
 		FD207BBD27DAB61600A75EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BB727DAB61600A75EA2 /* AppDelegate.swift */; };
 		FD207BBE27DAB61600A75EA2 /* TaggingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BB827DAB61600A75EA2 /* TaggingProtocol.swift */; };
 		FD207BC127DAC46E00A75EA2 /* MarvelCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BC027DAC46E00A75EA2 /* MarvelCrypto.swift */; };
+		FD207BC527DAC78F00A75EA2 /* MarvelCryptoSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BC427DAC78F00A75EA2 /* MarvelCryptoSpy.swift */; };
+		FD207BC727DAC7B600A75EA2 /* MarvelCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BC627DAC7B600A75EA2 /* MarvelCryptoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +141,8 @@
 		FD207BB727DAB61600A75EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD207BB827DAB61600A75EA2 /* TaggingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggingProtocol.swift; sourceTree = "<group>"; };
 		FD207BC027DAC46E00A75EA2 /* MarvelCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCrypto.swift; sourceTree = "<group>"; };
+		FD207BC427DAC78F00A75EA2 /* MarvelCryptoSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCryptoSpy.swift; sourceTree = "<group>"; };
+		FD207BC627DAC7B600A75EA2 /* MarvelCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCryptoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +337,7 @@
 		52B21E682798AFBE00F328AE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				FD207BC227DAC75C00A75EA2 /* Crypto */,
 				52F41E16275AC25D0074B233 /* HomeViewControllerTests.swift */,
 				526D76F927959C12004184D4 /* HomeViewModelTestes.swift */,
 			);
@@ -415,6 +420,23 @@
 				FD207BC027DAC46E00A75EA2 /* MarvelCrypto.swift */,
 			);
 			path = Crypto;
+			sourceTree = "<group>";
+		};
+		FD207BC227DAC75C00A75EA2 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				FD207BC627DAC7B600A75EA2 /* MarvelCryptoTests.swift */,
+				FD207BC327DAC77B00A75EA2 /* Doubles */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		FD207BC327DAC77B00A75EA2 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				FD207BC427DAC78F00A75EA2 /* MarvelCryptoSpy.swift */,
+			);
+			path = Doubles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -600,6 +622,8 @@
 			files = (
 				52EBEB59279612B90005637D /* CoreDataMock.swift in Sources */,
 				526D76FA27959C12004184D4 /* HomeViewModelTestes.swift in Sources */,
+				FD207BC527DAC78F00A75EA2 /* MarvelCryptoSpy.swift in Sources */,
+				FD207BC727DAC7B600A75EA2 /* MarvelCryptoTests.swift in Sources */,
 				52B21E642798AC8300F328AE /* HomeViewControllerSpy.swift in Sources */,
 				52F41E17275AC25D0074B233 /* HomeViewControllerTests.swift in Sources */,
 				52FFA4392756C049006A3F39 /* NetworkServiceSpy.swift in Sources */,
