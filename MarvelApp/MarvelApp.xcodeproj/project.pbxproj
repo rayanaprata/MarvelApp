@@ -57,6 +57,8 @@
 		52FFA41C2754DE59006A3F39 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 52FFA41B2754DE59006A3F39 /* Kingfisher */; };
 		52FFA41E27551323006A3F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FFA41D27551323006A3F39 /* Assets.xcassets */; };
 		52FFA4392756C049006A3F39 /* NetworkServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFA4382756C049006A3F39 /* NetworkServiceSpy.swift */; };
+		882FD57627EBD72600897D57 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FD57527EBD72500897D57 /* Authentication.swift */; };
+		882FD57C27EBD9B400897D57 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FD57B27EBD9B400897D57 /* AuthenticationTests.swift */; };
 		FD207B9B27DAB60800A75EA2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B9027DAB60800A75EA2 /* CoreDataManager.swift */; };
 		FD207B9C27DAB60800A75EA2 /* CoreDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B9127DAB60800A75EA2 /* CoreDataProtocol.swift */; };
 		FD207B9D27DAB60800A75EA2 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B9227DAB60800A75EA2 /* ParseManager.swift */; };
@@ -69,7 +71,6 @@
 		FD207BA427DAB60800A75EA2 /* ComicsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B9A27DAB60800A75EA2 /* ComicsItem.swift */; };
 		FD207BAC27DAB60F00A75EA2 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BA627DAB60F00A75EA2 /* NetworkServiceError.swift */; };
 		FD207BAD27DAB60F00A75EA2 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BA727DAB60F00A75EA2 /* Auth.swift */; };
-		FD207BAE27DAB60F00A75EA2 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BA827DAB60F00A75EA2 /* NetworkServiceProtocol.swift */; };
 		FD207BAF27DAB60F00A75EA2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BA927DAB60F00A75EA2 /* NetworkService.swift */; };
 		FD207BB027DAB60F00A75EA2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BAA27DAB60F00A75EA2 /* HTTPMethod.swift */; };
 		FD207BB127DAB60F00A75EA2 /* InternetConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BAB27DAB60F00A75EA2 /* InternetConnectionManager.swift */; };
@@ -118,6 +119,8 @@
 		52FFA41D27551323006A3F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52FFA42D27566AF1006A3F39 /* MarvelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FFA4382756C049006A3F39 /* NetworkServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceSpy.swift; sourceTree = "<group>"; };
+		882FD57527EBD72500897D57 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		882FD57B27EBD9B400897D57 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
 		FD207B9027DAB60800A75EA2 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		FD207B9127DAB60800A75EA2 /* CoreDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataProtocol.swift; sourceTree = "<group>"; };
 		FD207B9227DAB60800A75EA2 /* ParseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
@@ -130,7 +133,6 @@
 		FD207B9A27DAB60800A75EA2 /* ComicsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicsItem.swift; sourceTree = "<group>"; };
 		FD207BA627DAB60F00A75EA2 /* NetworkServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
 		FD207BA727DAB60F00A75EA2 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
-		FD207BA827DAB60F00A75EA2 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		FD207BA927DAB60F00A75EA2 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FD207BAA27DAB60F00A75EA2 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		FD207BAB27DAB60F00A75EA2 /* InternetConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnectionManager.swift; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 		52B21E682798AFBE00F328AE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				882FD57827EBD8F300897D57 /* Network */,
 				FD207BC227DAC75C00A75EA2 /* Crypto */,
 				52F41E16275AC25D0074B233 /* HomeViewControllerTests.swift */,
 				526D76F927959C12004184D4 /* HomeViewModelTestes.swift */,
@@ -353,6 +356,24 @@
 				52B21E652798AF8F00F328AE /* MockData */,
 			);
 			path = MarvelAppTests;
+			sourceTree = "<group>";
+		};
+		882FD57727EBD73800897D57 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FD207BA727DAB60F00A75EA2 /* Auth.swift */,
+				FD207BAA27DAB60F00A75EA2 /* HTTPMethod.swift */,
+				FD207BA627DAB60F00A75EA2 /* NetworkServiceError.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		882FD57827EBD8F300897D57 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				882FD57B27EBD9B400897D57 /* AuthenticationTests.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		FD207B8E27DAB60800A75EA2 /* Data */ = {
@@ -391,12 +412,10 @@
 		FD207BA527DAB60F00A75EA2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				FD207BA627DAB60F00A75EA2 /* NetworkServiceError.swift */,
-				FD207BA727DAB60F00A75EA2 /* Auth.swift */,
-				FD207BA827DAB60F00A75EA2 /* NetworkServiceProtocol.swift */,
+				882FD57727EBD73800897D57 /* Entity */,
 				FD207BA927DAB60F00A75EA2 /* NetworkService.swift */,
-				FD207BAA27DAB60F00A75EA2 /* HTTPMethod.swift */,
 				FD207BAB27DAB60F00A75EA2 /* InternetConnectionManager.swift */,
+				882FD57527EBD72500897D57 /* Authentication.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -605,9 +624,9 @@
 				FD207B9C27DAB60800A75EA2 /* CoreDataProtocol.swift in Sources */,
 				FD207BAC27DAB60F00A75EA2 /* NetworkServiceError.swift in Sources */,
 				FD207BBD27DAB61600A75EA2 /* AppDelegate.swift in Sources */,
+				882FD57627EBD72600897D57 /* Authentication.swift in Sources */,
 				FD207BB127DAB60F00A75EA2 /* InternetConnectionManager.swift in Sources */,
 				FD207BA427DAB60800A75EA2 /* ComicsItem.swift in Sources */,
-				FD207BAE27DAB60F00A75EA2 /* NetworkServiceProtocol.swift in Sources */,
 				FD207B9F27DAB60800A75EA2 /* Thumbnail.swift in Sources */,
 				FD207BA027DAB60800A75EA2 /* Character.swift in Sources */,
 				52E2A2552746C1A300A3AD3E /* CustomCell.swift in Sources */,
@@ -627,6 +646,7 @@
 				52B21E642798AC8300F328AE /* HomeViewControllerSpy.swift in Sources */,
 				52F41E17275AC25D0074B233 /* HomeViewControllerTests.swift in Sources */,
 				52FFA4392756C049006A3F39 /* NetworkServiceSpy.swift in Sources */,
+				882FD57C27EBD9B400897D57 /* AuthenticationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
