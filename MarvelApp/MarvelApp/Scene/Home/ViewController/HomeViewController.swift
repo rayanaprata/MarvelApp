@@ -15,9 +15,10 @@ class HomeViewController: UIViewController {
     // MARK: Properties
     let tag: TaggingProtocol
     private let marvelCrypto = MarvelCrypto()
+    private let auth = AuthenticationURLProvider()
     
     lazy var viewModel = HomeViewModel(
-        networkService: NetworkService(crypto: marvelCrypto),
+        networkService: NetworkService(crypto: marvelCrypto, auth: auth),
         coreDataManager: CoreDataManager(),
         parseManager: ParseManager()
     )

@@ -7,42 +7,43 @@
 
 import Foundation
 
+protocol NetworkServiceProtocol {
+    func setNewCharacters(_ offset: Int) -> String
+    func searchCharacter(_ nameStartsWith: String) -> String
+    func setCarouselCharacter(_ serieId: Int) -> String
+    func getListCharacters(urlString: String, method: HTTPMethod, success: @escaping (Character) -> Void, failure: @escaping (NetworkServiceError) -> Void)
+}
+
 class NetworkService: NetworkServiceProtocol {
     
+    // MARK: - Private Properties
     let baseURL = "http://gateway.marvel.com"
     
-    // MARK: - Private Properties
-    
     private let crypto: MarvelCryptoProtocol
+    private let auth: AuthenticationURLProviderProtocol
     
-    init(crypto: MarvelCryptoProtocol) {
+    init(crypto: MarvelCryptoProtocol, auth: AuthenticationURLProviderProtocol) {
         self.crypto = crypto
-    }
-    
-    func authentication(_ path: String) -> Auth {
-        return Auth(path: path,
-                    publicKey: Bundle.main.object(forInfoDictionaryKey: "publicKey") as! String,
-                    privateKey: Bundle.main.object(forInfoDictionaryKey: "privateKey") as! String,
-                    ts: Int(Date().timeIntervalSince1970))
+        self.auth = auth
     }
     
     /// Returns the URL string to EndPoint Characters with Offset - Fetches new characters.
     func setNewCharacters(_ offset: Int) -> String {
-        let auth = authentication("v1/public/characters")
+        let auth = auth.authentication("v1/public/characters")
         let content = String(auth.ts) + auth.privateKey + auth.publicKey
         let hash = crypto.MD5(string: content)
         return baseURL + "/" + auth.path + "?" + "offset=\(offset)" + "&ts=\(auth.ts)" + "&apikey=\(auth.publicKey)" + "&hash=\(hash)"
     }
     
     func searchCharacter(_ nameStartsWith: String) -> String {
-        let auth = authentication("v1/public/characters")
+        let auth = auth.authentication("v1/public/characters")
         let content = String(auth.ts) + auth.privateKey + auth.publicKey
         let hash = crypto.MD5(string: content)
         return baseURL + "/" + auth.path + "?" + "nameStartsWith=\(nameStartsWith)" + "&ts=\(auth.ts)" + "&apikey=\(auth.publicKey)" + "&hash=\(hash)"
     }
     
     func setCarouselCharacter(_ serieId: Int) -> String {
-        let auth = authentication("v1/public/characters")
+        let auth = auth.authentication("v1/public/characters")
         let content = String(auth.ts) + auth.privateKey + auth.publicKey
         let hash = crypto.MD5(string: content)
         return baseURL + "/" + auth.path + "?" + "series=\(serieId)" + "&ts=\(auth.ts)" + "&apikey=\(auth.publicKey)" + "&hash=\(hash)"
