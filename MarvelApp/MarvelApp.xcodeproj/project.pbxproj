@@ -59,6 +59,8 @@
 		52FFA4392756C049006A3F39 /* NetworkServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFA4382756C049006A3F39 /* NetworkServiceSpy.swift */; };
 		882FD57627EBD72600897D57 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FD57527EBD72500897D57 /* Authentication.swift */; };
 		882FD57C27EBD9B400897D57 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FD57B27EBD9B400897D57 /* AuthenticationTests.swift */; };
+		FD0FD80727EBE01E0082FE0D /* SetNewCharacterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0FD80627EBE01E0082FE0D /* SetNewCharacterRequest.swift */; };
+		FD0FD80927EBE0800082FE0D /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0FD80827EBE0800082FE0D /* BaseRequest.swift */; };
 		FD207B9B27DAB60800A75EA2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B9027DAB60800A75EA2 /* CoreDataManager.swift */; };
 		FD207B9C27DAB60800A75EA2 /* CoreDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B9127DAB60800A75EA2 /* CoreDataProtocol.swift */; };
 		FD207B9D27DAB60800A75EA2 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B9227DAB60800A75EA2 /* ParseManager.swift */; };
@@ -121,6 +123,8 @@
 		52FFA4382756C049006A3F39 /* NetworkServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceSpy.swift; sourceTree = "<group>"; };
 		882FD57527EBD72500897D57 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		882FD57B27EBD9B400897D57 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
+		FD0FD80627EBE01E0082FE0D /* SetNewCharacterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewCharacterRequest.swift; sourceTree = "<group>"; };
+		FD0FD80827EBE0800082FE0D /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		FD207B9027DAB60800A75EA2 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		FD207B9127DAB60800A75EA2 /* CoreDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataProtocol.swift; sourceTree = "<group>"; };
 		FD207B9227DAB60800A75EA2 /* ParseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
@@ -376,6 +380,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		FD0FD80527EBDFF90082FE0D /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				FD0FD80627EBE01E0082FE0D /* SetNewCharacterRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		FD207B8E27DAB60800A75EA2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,10 +424,12 @@
 		FD207BA527DAB60F00A75EA2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FD0FD80527EBDFF90082FE0D /* Requests */,
 				882FD57727EBD73800897D57 /* Entity */,
 				FD207BA927DAB60F00A75EA2 /* NetworkService.swift */,
 				FD207BAB27DAB60F00A75EA2 /* InternetConnectionManager.swift */,
 				882FD57527EBD72500897D57 /* Authentication.swift */,
+				FD0FD80827EBE0800082FE0D /* BaseRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -609,7 +623,9 @@
 				FD207BBC27DAB61600A75EA2 /* ImageWithBlur.swift in Sources */,
 				FD207BA327DAB60800A75EA2 /* Comics.swift in Sources */,
 				527AF10D27907016007247E0 /* DetailsViewModel.swift in Sources */,
+				FD0FD80927EBE0800082FE0D /* BaseRequest.swift in Sources */,
 				FD207BC127DAC46E00A75EA2 /* MarvelCrypto.swift in Sources */,
+				FD0FD80727EBE01E0082FE0D /* SetNewCharacterRequest.swift in Sources */,
 				522D9E322791B76E00FB6B47 /* HomeViewModelDelegate.swift in Sources */,
 				52E2A2522746BF2100A3AD3E /* DetailsViewController.swift in Sources */,
 				FD207BB027DAB60F00A75EA2 /* HTTPMethod.swift in Sources */,
