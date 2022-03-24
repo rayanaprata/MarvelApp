@@ -7,11 +7,11 @@ protocol BaseRequest {
 /// This extension is used to provide a default value for anyone who conforms with it
 extension BaseRequest {
     var baseUrl: String {
-        "http://gateway.marvel.com"
+        "gateway.marvel.com"
     }
     
     var path: String {
-        "v1/public/characters"
+        "/v1/public/characters"
     }
 }
 
