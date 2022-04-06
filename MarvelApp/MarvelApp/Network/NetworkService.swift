@@ -38,18 +38,12 @@ class NetworkService: NetworkServiceProtocol {
         makeURL(from: SetNewCharacterRequest(page: offset))
     }
     
-    func searchCharacter(_ nameStartsWith: String) -> String {
-        let auth = auth.authentication("v1/public/characters")
-        let content = String(auth.ts) + auth.privateKey + auth.publicKey
-        let hash = crypto.MD5(string: content)
-        return baseURL + "/" + auth.path + "?" + "nameStartsWith=\(nameStartsWith)" + "&ts=\(auth.ts)" + "&apikey=\(auth.publicKey)" + "&hash=\(hash)"
+    func searchCharacter(_ name: String) -> String {
+        makeURL(from: SearchCharacterRequest(name: name))
     }
     
     func setCarouselCharacter(_ serieId: Int) -> String {
-        let auth = auth.authentication("v1/public/characters")
-        let content = String(auth.ts) + auth.privateKey + auth.publicKey
-        let hash = crypto.MD5(string: content)
-        return baseURL + "/" + auth.path + "?" + "series=\(serieId)" + "&ts=\(auth.ts)" + "&apikey=\(auth.publicKey)" + "&hash=\(hash)"
+        makeURL(from: SetCarouselCharacterRequest(serieId: serieId))
     }
     
     private func makeURL(from baseRequest: BaseRequest) -> String {
