@@ -5,7 +5,7 @@ struct SetNewCharacterRequest: BaseRequest {
         self.page = page
     }
 
-    var parameters: [BaseRequestParameters : Any] {
+    var parameters: [BaseRequestParameters: AnyHashable] {
         return [.offset: page]
     }
 }
