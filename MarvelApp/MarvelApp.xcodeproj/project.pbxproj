@@ -58,7 +58,7 @@
 		52FFA41E27551323006A3F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FFA41D27551323006A3F39 /* Assets.xcassets */; };
 		52FFA4392756C049006A3F39 /* NetworkServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFA4382756C049006A3F39 /* NetworkServiceSpy.swift */; };
 		882FD57627EBD72600897D57 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FD57527EBD72500897D57 /* Authentication.swift */; };
-		882FD57C27EBD9B400897D57 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FD57B27EBD9B400897D57 /* AuthenticationTests.swift */; };
+		882FD57C27EBD9B400897D57 /* AuthenticationURLProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FD57B27EBD9B400897D57 /* AuthenticationURLProviderTests.swift */; };
 		FD0FD80727EBE01E0082FE0D /* SetNewCharacterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0FD80627EBE01E0082FE0D /* SetNewCharacterRequest.swift */; };
 		FD0FD80927EBE0800082FE0D /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0FD80827EBE0800082FE0D /* BaseRequest.swift */; };
 		FD207B9B27DAB60800A75EA2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B9027DAB60800A75EA2 /* CoreDataManager.swift */; };
@@ -85,6 +85,10 @@
 		FD207BC127DAC46E00A75EA2 /* MarvelCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BC027DAC46E00A75EA2 /* MarvelCrypto.swift */; };
 		FD207BC527DAC78F00A75EA2 /* MarvelCryptoSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BC427DAC78F00A75EA2 /* MarvelCryptoSpy.swift */; };
 		FD207BC727DAC7B600A75EA2 /* MarvelCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207BC627DAC7B600A75EA2 /* MarvelCryptoTests.swift */; };
+		FD4864F32819E8A900F01D88 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4864F22819E8A900F01D88 /* NetworkServiceTests.swift */; };
+		FD4864F52819E90A00F01D88 /* AuthenticationURLProviderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4864F42819E90A00F01D88 /* AuthenticationURLProviderSpy.swift */; };
+		FD4864F82819E96D00F01D88 /* AuthenticationURLProvider+Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4864F72819E96D00F01D88 /* AuthenticationURLProvider+Fixtures.swift */; };
+		FD4864FB2819ECE900F01D88 /* SetNewCharacterRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4864FA2819ECE900F01D88 /* SetNewCharacterRequestTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,7 +126,7 @@
 		52FFA42D27566AF1006A3F39 /* MarvelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FFA4382756C049006A3F39 /* NetworkServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceSpy.swift; sourceTree = "<group>"; };
 		882FD57527EBD72500897D57 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
-		882FD57B27EBD9B400897D57 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
+		882FD57B27EBD9B400897D57 /* AuthenticationURLProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationURLProviderTests.swift; sourceTree = "<group>"; };
 		FD0FD80627EBE01E0082FE0D /* SetNewCharacterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewCharacterRequest.swift; sourceTree = "<group>"; };
 		FD0FD80827EBE0800082FE0D /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		FD207B9027DAB60800A75EA2 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -149,6 +153,10 @@
 		FD207BC027DAC46E00A75EA2 /* MarvelCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCrypto.swift; sourceTree = "<group>"; };
 		FD207BC427DAC78F00A75EA2 /* MarvelCryptoSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCryptoSpy.swift; sourceTree = "<group>"; };
 		FD207BC627DAC7B600A75EA2 /* MarvelCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCryptoTests.swift; sourceTree = "<group>"; };
+		FD4864F22819E8A900F01D88 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		FD4864F42819E90A00F01D88 /* AuthenticationURLProviderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationURLProviderSpy.swift; sourceTree = "<group>"; };
+		FD4864F72819E96D00F01D88 /* AuthenticationURLProvider+Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationURLProvider+Fixtures.swift"; sourceTree = "<group>"; };
+		FD4864FA2819ECE900F01D88 /* SetNewCharacterRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewCharacterRequestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,7 +383,9 @@
 		882FD57827EBD8F300897D57 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				882FD57B27EBD9B400897D57 /* AuthenticationTests.swift */,
+				FD4864F92819ECE000F01D88 /* Requests */,
+				FD4864F62819E91D00F01D88 /* AuthenticationURLProvider */,
+				FD4864F22819E8A900F01D88 /* NetworkServiceTests.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -470,6 +480,24 @@
 				FD207BC427DAC78F00A75EA2 /* MarvelCryptoSpy.swift */,
 			);
 			path = Doubles;
+			sourceTree = "<group>";
+		};
+		FD4864F62819E91D00F01D88 /* AuthenticationURLProvider */ = {
+			isa = PBXGroup;
+			children = (
+				FD4864F42819E90A00F01D88 /* AuthenticationURLProviderSpy.swift */,
+				882FD57B27EBD9B400897D57 /* AuthenticationURLProviderTests.swift */,
+				FD4864F72819E96D00F01D88 /* AuthenticationURLProvider+Fixtures.swift */,
+			);
+			path = AuthenticationURLProvider;
+			sourceTree = "<group>";
+		};
+		FD4864F92819ECE000F01D88 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				FD4864FA2819ECE900F01D88 /* SetNewCharacterRequestTests.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,7 +690,11 @@
 				52B21E642798AC8300F328AE /* HomeViewControllerSpy.swift in Sources */,
 				52F41E17275AC25D0074B233 /* HomeViewControllerTests.swift in Sources */,
 				52FFA4392756C049006A3F39 /* NetworkServiceSpy.swift in Sources */,
-				882FD57C27EBD9B400897D57 /* AuthenticationTests.swift in Sources */,
+				FD4864F52819E90A00F01D88 /* AuthenticationURLProviderSpy.swift in Sources */,
+				FD4864F82819E96D00F01D88 /* AuthenticationURLProvider+Fixtures.swift in Sources */,
+				FD4864F32819E8A900F01D88 /* NetworkServiceTests.swift in Sources */,
+				FD4864FB2819ECE900F01D88 /* SetNewCharacterRequestTests.swift in Sources */,
+				882FD57C27EBD9B400897D57 /* AuthenticationURLProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,7 @@
 protocol BaseRequest {
     var baseUrl: String { get }
     var path: String { get }
-    var parameters: [BaseRequestParameters: Any] { get }
+    var parameters: [BaseRequestParameters: AnyHashable] { get }
 }
 
 /// This extension is used to provide a default value for anyone who conforms with it
