@@ -3,7 +3,9 @@
 
 ## 📄 Sobre o Projeto
 
-O objetivo deste projeto é reforçar os conhecimentos e conceitos de Swift para o desenvolvimento de aplicações iOS.
+O objetivo inicial deste projeto era de reforçar os conhecimentos e conceitos de Swift para o desenvolvimento de aplicações iOS. Porém, com a possibilidade e oportunidade de iniciar uma mentoria de desenvolvimento iOS, foi escolhido este projeto para aprimoramento. O projeto está sendo refatorado para se adequar as melhores práticas e padrões utilizados no mercado de trabalho.
+
+Um exemplo de alteração bastante significativa no projeto é que a arquitetura que iniciou como MVC e logo após foi migrada para MVVM, agora será refatorada para utilização do VIP.
 
 ## 📌 Requisitos do Projeto
 
