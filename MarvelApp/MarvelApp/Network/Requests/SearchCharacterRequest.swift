@@ -5,7 +5,7 @@ struct SearchCharacterRequest: BaseRequest {
         self.name = name
     }
 
-    var parameters: [BaseRequestParameters : Any] {
+    var parameters: [BaseRequestParameters : AnyHashable] {
         return [.nameStartsWith : name]
     }
 }

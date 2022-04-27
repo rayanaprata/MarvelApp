@@ -5,7 +5,7 @@ struct SetCarouselCharacterRequest: BaseRequest {
         self.serieId = serieId
     }
 
-    var parameters: [BaseRequestParameters : Any] {
+    var parameters: [BaseRequestParameters : AnyHashable] {
         return [.series : serieId]
     }
 }

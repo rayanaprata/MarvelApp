@@ -32,7 +32,6 @@
 		52FFA41E27551323006A3F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FFA41D27551323006A3F39 /* Assets.xcassets */; };
 		52FFA4392756C049006A3F39 /* NetworkServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFA4382756C049006A3F39 /* NetworkServiceSpy.swift */; };
 		882FD57627EBD72600897D57 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FD57527EBD72500897D57 /* Authentication.swift */; };
-		882FD57C27EBD9B400897D57 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FD57B27EBD9B400897D57 /* AuthenticationTests.swift */; };
 		88CDDB5127FE4A750095BB7F /* SearchCharacterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDDB5027FE4A750095BB7F /* SearchCharacterRequest.swift */; };
 		88CDDB5327FE4B440095BB7F /* SetCarouselCharacterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CDDB5227FE4B440095BB7F /* SetCarouselCharacterRequest.swift */; };
 		FD0FD80727EBE01E0082FE0D /* SetNewCharacterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0FD80627EBE01E0082FE0D /* SetNewCharacterRequest.swift */; };
@@ -65,6 +64,9 @@
 		FD4864F52819E90A00F01D88 /* AuthenticationURLProviderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4864F42819E90A00F01D88 /* AuthenticationURLProviderSpy.swift */; };
 		FD4864F82819E96D00F01D88 /* AuthenticationURLProvider+Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4864F72819E96D00F01D88 /* AuthenticationURLProvider+Fixtures.swift */; };
 		FD4864FB2819ECE900F01D88 /* SetNewCharacterRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4864FA2819ECE900F01D88 /* SetNewCharacterRequestTests.swift */; };
+		FD4864FD2819F19400F01D88 /* SearchCharacterRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4864FC2819F19400F01D88 /* SearchCharacterRequestTests.swift */; };
+		FD4864FF2819F1C400F01D88 /* SetCarouselCharacterRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4864FE2819F1C400F01D88 /* SetCarouselCharacterRequestTests.swift */; };
+		FD4865012819F20700F01D88 /* AuthenticationURLProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4865002819F20700F01D88 /* AuthenticationURLProviderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +104,6 @@
 		52FFA42D27566AF1006A3F39 /* MarvelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FFA4382756C049006A3F39 /* NetworkServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceSpy.swift; sourceTree = "<group>"; };
 		882FD57527EBD72500897D57 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
-		882FD57B27EBD9B400897D57 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
 		88CDDB5027FE4A750095BB7F /* SearchCharacterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharacterRequest.swift; sourceTree = "<group>"; };
 		88CDDB5227FE4B440095BB7F /* SetCarouselCharacterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCarouselCharacterRequest.swift; sourceTree = "<group>"; };
 		FD0FD80627EBE01E0082FE0D /* SetNewCharacterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewCharacterRequest.swift; sourceTree = "<group>"; };
@@ -135,6 +136,9 @@
 		FD4864F42819E90A00F01D88 /* AuthenticationURLProviderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationURLProviderSpy.swift; sourceTree = "<group>"; };
 		FD4864F72819E96D00F01D88 /* AuthenticationURLProvider+Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationURLProvider+Fixtures.swift"; sourceTree = "<group>"; };
 		FD4864FA2819ECE900F01D88 /* SetNewCharacterRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewCharacterRequestTests.swift; sourceTree = "<group>"; };
+		FD4864FC2819F19400F01D88 /* SearchCharacterRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharacterRequestTests.swift; sourceTree = "<group>"; };
+		FD4864FE2819F1C400F01D88 /* SetCarouselCharacterRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCarouselCharacterRequestTests.swift; sourceTree = "<group>"; };
+		FD4865002819F20700F01D88 /* AuthenticationURLProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationURLProviderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -439,8 +443,8 @@
 		FD4864F62819E91D00F01D88 /* AuthenticationURLProvider */ = {
 			isa = PBXGroup;
 			children = (
+				FD4865002819F20700F01D88 /* AuthenticationURLProviderTests.swift */,
 				FD4864F42819E90A00F01D88 /* AuthenticationURLProviderSpy.swift */,
-				882FD57B27EBD9B400897D57 /* AuthenticationURLProviderTests.swift */,
 				FD4864F72819E96D00F01D88 /* AuthenticationURLProvider+Fixtures.swift */,
 			);
 			path = AuthenticationURLProvider;
@@ -450,6 +454,8 @@
 			isa = PBXGroup;
 			children = (
 				FD4864FA2819ECE900F01D88 /* SetNewCharacterRequestTests.swift */,
+				FD4864FC2819F19400F01D88 /* SearchCharacterRequestTests.swift */,
+				FD4864FE2819F1C400F01D88 /* SetCarouselCharacterRequestTests.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -615,8 +621,10 @@
 			files = (
 				52EBEB59279612B90005637D /* CoreDataMock.swift in Sources */,
 				526D76FA27959C12004184D4 /* HomeViewModelTestes.swift in Sources */,
+				FD4865012819F20700F01D88 /* AuthenticationURLProviderTests.swift in Sources */,
 				FD207BC527DAC78F00A75EA2 /* MarvelCryptoSpy.swift in Sources */,
 				FD207BC727DAC7B600A75EA2 /* MarvelCryptoTests.swift in Sources */,
+				FD4864FD2819F19400F01D88 /* SearchCharacterRequestTests.swift in Sources */,
 				52B21E642798AC8300F328AE /* HomeViewControllerSpy.swift in Sources */,
 				52F41E17275AC25D0074B233 /* HomeViewControllerTests.swift in Sources */,
 				52FFA4392756C049006A3F39 /* NetworkServiceSpy.swift in Sources */,
@@ -624,7 +632,7 @@
 				FD4864F82819E96D00F01D88 /* AuthenticationURLProvider+Fixtures.swift in Sources */,
 				FD4864F32819E8A900F01D88 /* NetworkServiceTests.swift in Sources */,
 				FD4864FB2819ECE900F01D88 /* SetNewCharacterRequestTests.swift in Sources */,
-				882FD57C27EBD9B400897D57 /* AuthenticationURLProviderTests.swift in Sources */,
+				FD4864FF2819F1C400F01D88 /* SetCarouselCharacterRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
