@@ -17,4 +17,6 @@ extension BaseRequest {
 
 enum BaseRequestParameters: String {
     case offset
+    case nameStartsWith
+    case series
 }
