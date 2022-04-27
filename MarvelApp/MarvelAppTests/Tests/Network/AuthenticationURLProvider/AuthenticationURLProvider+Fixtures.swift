@@ -1,7 +1,6 @@
 @testable import MarvelApp
 
 extension Auth {
-
     static func fixture(
         path: String = "",
         publicKey: String = "",
