@@ -21,32 +21,53 @@ class NetworkService: NetworkServiceProtocol {
     
     private let crypto: MarvelCryptoProtocol
     private let auth: AuthenticationURLProviderProtocol
+    private let urlSession: URLSession
     
-    init(crypto: MarvelCryptoProtocol, auth: AuthenticationURLProviderProtocol) {
+    init(
+        crypto: MarvelCryptoProtocol,
+        auth: AuthenticationURLProviderProtocol,
+        urlSession: URLSession = .shared
+    ) {
         self.crypto = crypto
         self.auth = auth
+        self.urlSession = urlSession
     }
     
     /// Returns the URL string to EndPoint Characters with Offset - Fetches new characters.
     func setNewCharacters(_ offset: Int) -> String {
-        let auth = auth.authentication("v1/public/characters")
-        let content = String(auth.ts) + auth.privateKey + auth.publicKey
-        let hash = crypto.MD5(string: content)
-        return baseURL + "/" + auth.path + "?" + "offset=\(offset)" + "&ts=\(auth.ts)" + "&apikey=\(auth.publicKey)" + "&hash=\(hash)"
+        makeURL(from: SetNewCharacterRequest(page: offset))
     }
     
-    func searchCharacter(_ nameStartsWith: String) -> String {
-        let auth = auth.authentication("v1/public/characters")
-        let content = String(auth.ts) + auth.privateKey + auth.publicKey
-        let hash = crypto.MD5(string: content)
-        return baseURL + "/" + auth.path + "?" + "nameStartsWith=\(nameStartsWith)" + "&ts=\(auth.ts)" + "&apikey=\(auth.publicKey)" + "&hash=\(hash)"
+    func searchCharacter(_ name: String) -> String {
+        makeURL(from: SearchCharacterRequest(name: name))
     }
     
     func setCarouselCharacter(_ serieId: Int) -> String {
-        let auth = auth.authentication("v1/public/characters")
+        makeURL(from: SetCarouselCharacterRequest(serieId: serieId))
+    }
+    
+    private func makeURL(from baseRequest: BaseRequest) -> String {
+        let auth = auth.authentication(baseRequest.path)
         let content = String(auth.ts) + auth.privateKey + auth.publicKey
         let hash = crypto.MD5(string: content)
-        return baseURL + "/" + auth.path + "?" + "series=\(serieId)" + "&ts=\(auth.ts)" + "&apikey=\(auth.publicKey)" + "&hash=\(hash)"
+    
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = baseRequest.baseUrl
+        components.path = auth.path
+    
+        let baseRequestParams: [URLQueryItem] = baseRequest.parameters.map {
+            .init(name: $0.key.rawValue, value: "\($0.value)")
+        }
+        
+        components.queryItems?.append(contentsOf: baseRequestParams)
+        components.queryItems = [
+            URLQueryItem(name: "ts", value: "\(auth.ts)"),
+            URLQueryItem(name: "apikey", value: auth.publicKey),
+            URLQueryItem(name: "hash", value: hash)
+        ]
+        
+        return components.url?.description ?? ""
     }
     
     func getListCharacters(urlString: String, method: HTTPMethod, success: @escaping (Character) -> Void, failure: @escaping (NetworkServiceError) -> Void) {
